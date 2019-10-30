@@ -6,7 +6,7 @@
 
 [Information about this project](./assets/markdown/en/about.md) in a different Markdown file.
 
-![](./doc/screenshot.png | width=100)
+![](https://github.com/Weinto/otp-qrcode/blob/master/doc/screenshot.png)
 
 ## Todo
 
