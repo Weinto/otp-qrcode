@@ -1,6 +1,6 @@
 # OTP QR code generator
 
-OTP QR code generator est utiliser pour aider les utilisateur à installer leur configuration sur leur applications OTP favorites.
+OTP QR code generator est utilisé pour aider les utilisateurs à installer leur configuration sur leur applications OTP favorites.
 
 Sommaire
 
@@ -8,9 +8,9 @@ Sommaire
 
 ## Motivations
 
-En travaillant sur de la configuration SSH serveur nous avons décidé d'abandonner les connexions par mot de passe et d'utiliser uniquement les clés SSH. Cependant, comme nous ne pouvions pas toujours éviter les mots de passe, nous avons implémenté la double authentification pour SSH.
+En travaillant sur de la configuration SSH serveur nous avons décidé d'abandonner les connexions par mot de passe et d'utiliser uniquement les clés SSH. Cependant, comme nous ne pouvions pas toujours éviter les mots de passes, nous avons implémenté la double authentification pour SSH.
 
-Une fois que l'utilisateur et sa configuration sont créés, nous avions besoin d'un moyen pour envoyer cela sur le terminal.
+Une fois que l'utilisateur et sa configuration sont créés, nous avions besoin d'un moyen pour envoyer cela sur le mobile.
 
 Pensez à lire cet article pour savoir [comment implementer 2FA SSH avec Google Authenticator](https://hackertarget.com/ssh-two-factor-google-authenticator/) (en).
 
