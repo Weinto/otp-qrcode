@@ -461,20 +461,10 @@ export default {
   },
   watch: {
     uri (newValue, oldValue) {
-      if (newValue) {
-        QRCode.toCanvas(this.$refs.canvas, newValue, { errorCorrectionLevel: 'H' }, function (error) {
-          this.$notify.error({
-            title: 'Error',
-            message: error
-          })
-        })
+      if (newValue !== '') {
+        QRCode.toCanvas(this.$refs.canvas, newValue, { errorCorrectionLevel: 'H' })
       } else {
-        QRCode.toCanvas(this.$refs.canvas, 'no OTP configuration given.', function (error) {
-          this.$notify.error({
-            title: 'Error',
-            message: error
-          })
-        })
+        QRCode.toCanvas(this.$refs.canvas, 'no OTP configuration given.')
       }
     }
   },
