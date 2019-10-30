@@ -4,7 +4,7 @@
 
 ## Information
 
-[Information about this project](./assets/markdown/en/about.md) in a different Markdown file.
+[Information about this project](./app/assets/markdown/en/about.md) in a different Markdown file.
 
 ![](https://github.com/Weinto/otp-qrcode/blob/master/doc/screenshot.png)
 
