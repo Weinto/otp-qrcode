@@ -1,4 +1,4 @@
-# totp-qrcode
+# otp-qrcode
 
 > A simple service to quickly install your Google Authenticator compatible TOTP configuration from a QRCode.
 

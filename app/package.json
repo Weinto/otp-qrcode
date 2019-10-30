@@ -1,5 +1,5 @@
 {
-  "name": "totp-qrcode",
+  "name": "otp-qrcode",
   "version": "1.0.0",
   "description": "A simple page to quickly install your Google Authenticator compatible TOTP configuration from a QRCode ",
   "author": "Nicolas Bages",
