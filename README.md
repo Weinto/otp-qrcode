@@ -4,20 +4,16 @@
 
 ## Information
 
-[Information about this project](./app/assets/markdown/en/about.md) in a different Markdown file.
+[Information about this project](./src/content/en/about.md) in a different Markdown file.
 
 ![](doc/screenshot.png)
 
 ## Todo
 
-- Linters OK, now add tests
 - SEO
-- Licence
 - Encrypt + URL
 - Copy generated URL
 - Decrypt from URL
-- Fix lang switcher
-- UI design
 
 ## Development
 
