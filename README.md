@@ -4,24 +4,19 @@
 
 ## Information
 
-[Information about this project](./app/assets/markdown/en/about.md) in a different Markdown file.
+[Information about this project](./src/content/en/about.md) in a different Markdown file.
 
-![](https://github.com/Weinto/otp-qrcode/blob/master/doc/screenshot.png)
+![](doc/screenshot.png)
 
 ## Todo
 
-- Linters OK, now add tests
 - SEO
-- Licence
 - Encrypt + URL
-- Copy generated URL
 - Decrypt from URL
-- Fix lang switcher
-- UI design
 
 ## Development
 
-``` bash
+```bash
 # install dependencies
 npm run install
 

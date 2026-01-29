@@ -1,0 +1,98 @@
+{
+  "heading": {
+    "h1": "Generate 2FA QR code",
+    "type": "Type",
+    "settings": "Settings",
+    "advanced_settings": "Advanced settings"
+  },
+  "nav": {
+    "generate": "Generate",
+    "about": "About"
+  },
+  "phrase": {
+    "introduction": "This generator helps you save or install your OTP configuration faster."
+  },
+  "form": {
+    "type": {
+      "label": "Type",
+      "option": {
+        "totp": {
+          "acronym": "TOTP",
+          "label": "Time-based One-Time Password"
+        },
+        "hotp": {
+          "acronym": "HOTP",
+          "label": "HMAC-based One-Time Password"
+        }
+      },
+      "tooltip": "",
+      "validation": {
+        "required": "Required"
+      }
+    },
+    "secret": {
+      "label": "Secret",
+      "placeholder": "Secret",
+      "tooltip": "Secret provided by the issuer.",
+      "validation": {
+        "required": "Required"
+      }
+    },
+    "label": {
+      "label": "Label",
+      "placeholder": "Label",
+      "tooltip": "How it will be labeled in your client application.",
+      "validation": {
+        "required": "Required"
+      }
+    },
+    "issuer": {
+      "label": "Issuer",
+      "placeholder": "Issuer",
+      "tooltip": "The OTP issuer of this configuration.",
+      "validation": {
+        "required": "Required"
+      }
+    },
+    "counter": {
+      "label": "Counter",
+      "placeholder": "Initial counter – Minimum is 0",
+      "tooltip": " Initial counter value. Default to 0.",
+      "validation": {
+        "required": "Required",
+        "integer": "Only integers are allowed",
+        "min": "Integer must be 0 or greater"
+      }
+    },
+    "algorithm": {
+      "label": "Algorithm",
+      "tooltip": "Ignored by the Google Authenticator implementations. Default to SHA1.",
+      "validation": {
+        "validator": "Algorithm must be SHA1, SHA256 or SHA512"
+      }
+    },
+    "digits": {
+      "label": "Digits",
+      "option": {
+        "label": "no digit | 1 digit | {count} digits"
+      },
+      "tooltip": "How long should be the OTP code provided to the user. Default to 6 digits. Ignored by the Google Authenticator implementations on Android and Blackberry.",
+      "validation": {
+        "validator": "Digits must be {option_1} or {option_2}"
+      }
+    },
+    "period": {
+      "label": "Period",
+      "unit": "seconds",
+      "tooltip": "The period that a TOTP code will be valid for, in seconds. Default to 30.",
+      "validation": {
+        "integer": "Must be an interger",
+        "min": "The user will need more than 10 seconds"
+      }
+    }
+  },
+  "clipboard": {
+    "success": "Copied to clipboard!",
+    "error": "Failed to copy to clipboard"
+  }
+}
