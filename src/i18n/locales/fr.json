@@ -1,0 +1,94 @@
+{
+  "heading": {
+    "h1": "Générer un QR code pour du 2FA",
+    "type": "Type",
+    "settings": "Paramètres",
+    "advanced_settings": "Paramètres avancés"
+  },
+  "nav": {
+    "generate": "Générer",
+    "about": "À propos"
+  },
+  "phrase": {
+    "introduction": "Ce générateur vous aide à sauvegarder ou installer vos configuration OTP plus rapidement"
+  },
+  "form": {
+    "type": {
+      "label": "Type",
+      "option": {
+        "totp": {
+          "acronym": "TOTP",
+          "label": "Mot de passe unique basé sur du temps"
+        },
+        "hotp": {
+          "acronym": "HOTP",
+          "label": "Code d'authentification hashé basé sur du temps"
+        }
+      },
+      "tooltip": "",
+      "validation": {
+        "required": "Obligatoire"
+      }
+    },
+    "secret": {
+      "label": "Secret",
+      "placeholder": "Secret",
+      "tooltip": "Secret délivré par l'émetteur.",
+      "validation": {
+        "required": "Obligatoire"
+      }
+    },
+    "label": {
+      "label": "Étiquette",
+      "placeholder": "Étiquette",
+      "tooltip": "Étiquette de la configuration visible dans votre application.",
+      "validation": {
+        "required": "Required"
+      }
+    },
+    "issuer": {
+      "label": "Émetteur",
+      "placeholder": "Émetteur",
+      "tooltip": "L'émetteur de cette configuration OTP.",
+      "validation": {
+        "required": "Obligatoire"
+      }
+    },
+    "counter": {
+      "label": "Compteur",
+      "placeholder": "Compteur initial – Le minimum est 0",
+      "tooltip": " Valeur du compteur initial. Défaut à 0.",
+      "validation": {
+        "required": "Obligatoire",
+        "integer": "Uniquement les nombres entiers sont authorisés",
+        "min": "Nombre entier obligatoirement supérieur à 0"
+      }
+    },
+    "algorithm": {
+      "label": "Algorithme",
+      "tooltip": "Ignoré par les implémentations Google Authenticator. Défaut à SHA1.",
+      "validation": {
+        "validator": "L'algorithme doit être SHA1, SHA256 ou SHA512"
+      }
+    },
+    "digits": {
+      "label": "Chiffres",
+      "option": {
+        "label": "aucun chiffres | 1 chiffre | {count} chiffres"
+      },
+      "tooltip": "Longueur du code OTP. Défaut à 6 chiffres. Ignoré par l'implémentation Google Authenticator sur Android and Blackberry.",
+      "validation": {
+        "validator": "Le nombre de chiffres doit êtres {option_1} ou {option_2}"
+      }
+    },
+    "period": {
+      "label": "Période",
+      "unit": "seconds",
+      "tooltip": "La période pendant laquelle un code TOTP sera valide, en secondes. Défaut à 30.",
+      "validation": {
+        "integer": "Uniquement un nombre entier",
+        "min": "L'utilisateur aura besoin de plus de 10 secondes"
+      }
+    }
+  }
+}
