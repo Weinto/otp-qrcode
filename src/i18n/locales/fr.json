@@ -90,5 +90,9 @@
         "min": "L'utilisateur aura besoin de plus de 10 secondes"
       }
     }
+  },
+  "clipboard": {
+    "success": "Copié dans le presse-papier !",
+    "error": "Échec de la copie"
   }
 }

@@ -262,8 +262,43 @@ const onSubmit = () => {
 }
 
 const toast = useToast()
-const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text)
-    toast.add({ title: 'Copied to clipboard' })
+
+const copyToClipboard = async (text: string) => {
+    if (!text) return
+
+    try {
+        if (navigator.clipboard) {
+            await navigator.clipboard.writeText(text)
+        } else {
+            // Fallback for non-secure contexts (http)
+            const textArea = document.createElement("textarea")
+            textArea.value = text
+            textArea.style.position = "fixed"
+            textArea.style.left = "-9999px"
+            document.body.appendChild(textArea)
+            textArea.focus()
+            textArea.select()
+            
+            try {
+                const successful = document.execCommand('copy')
+                if (!successful) throw new Error('Copy command failed')
+            } finally {
+                document.body.removeChild(textArea)
+            }
+        }
+        
+        toast.add({
+            title: t('clipboard.success'),
+            icon: 'i-heroicons-check-circle',
+            color: 'green'
+        })
+    } catch (err) {
+        console.error('Failed to copy: ', err)
+        toast.add({
+            title: t('clipboard.error'),
+            icon: 'i-heroicons-x-circle',
+            color: 'red'
+        })
+    }
 }
 </script>

@@ -90,5 +90,9 @@
         "min": "The user will need more than 10 seconds"
       }
     }
+  },
+  "clipboard": {
+    "success": "Copied to clipboard!",
+    "error": "Failed to copy to clipboard"
   }
 }

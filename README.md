@@ -12,7 +12,6 @@
 
 - SEO
 - Encrypt + URL
-- Copy generated URL
 - Decrypt from URL
 
 ## Development
