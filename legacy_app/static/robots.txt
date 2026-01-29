@@ -1,6 +1,0 @@
-User-agent: *
-Crawl-delay: 300
-Allow: /
-Disallow: /a-secret-directory/do-not-open/
-
-Sitemap: https://DOMAIN.TLD/sitemap.xml
